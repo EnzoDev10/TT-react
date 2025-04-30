@@ -19,7 +19,7 @@ function ProductsContainer({ productos }) {
 		Para una explicación detallada de useEffect: https://es.react.dev/reference/react/useEffect
 		*/
 		useEffect(() => {
-			fetch('https://openlibrary.org/search.json?author=lovecraft')
+			fetch('https://fakestoreapi.com/products')
 				.then((respuesta) => respuesta.json())
 				.then(
 					(datos) => console.log(datos)
