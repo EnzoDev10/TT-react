@@ -1,6 +1,5 @@
-import Card from './Card';
 import '../styles/Carrito.css';
-
+import CarritoCard from './CarritoCard';
 /* 
 Muestra los productos que fueron agregados al carrito.
 Requiere de un valor "productos" que debe ser de tipo array, es decir, una lista de valores, en este caso deben ser de tipo object.
@@ -14,7 +13,7 @@ export default function Carrito({ productos }) {
 			{productos.length > 0 ? (
 				// el segundo parametro dentro de map (index) siempre deberia contener la posición del producto dentro del array productos, este valor es unico(en este componente) asi que puede ser utilizado para la key.
 				productos.map((producto, index) => (
-					<Card producto={producto} key={index} />
+					<CarritoCard producto={producto} key={index} />
 				))
 			) : (
 				<p>Carrito vacio</p>

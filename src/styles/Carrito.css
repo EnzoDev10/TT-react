@@ -1,20 +1,42 @@
-.carrito-container {
+.carrito-conteiner {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: center;
+	height: 200px;
+	margin: 50px;
 }
 
 .carrito-card {
+	border: solid;
+	border-color: black;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
 	background-color: bisque;
 	border: 1px solid #ddd;
 	border-radius: 8px;
-	width: 200px;
+	width: 100%;
 	text-align: center;
+	height: 150px;
+}
+
+.carrito-titulo {
+	width: 20%;
+}
+
+.descripcion-carrito {
+	width: 40%;
+}
+
+.boton-carrito {
+	width: 3%;
+	height: 30%;
 }
 
 .carrito-image {
 	width: 100px;
-	height: 100px;
+	height: 100%;
 	border-radius: 50%;
 }
