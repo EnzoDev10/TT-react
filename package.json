@@ -1,14 +1,12 @@
 {
 	"name": "vite-project",
-	"homepage": "https://EnzoDev10.github.io/TT-react",
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
 		"build": "vite build",
-		"predeploy": "npm run build",
-		"deploy": "gh-pages -d build",
+		"deploy": "npm run build && gh-pages -d dist",
 		"lint": "eslint .",
 		"preview": "vite preview"
 	},
